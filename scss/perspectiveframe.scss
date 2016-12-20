@@ -1,0 +1,125 @@
+
+
+$ch: 90vmin;
+
+$cubetrans: $ch / 2 ;
+
+$Zunit: -1 * $ch;
+
+
+
+body {
+   width: 100%;
+   height: 100%;
+   background-color: #444;
+   color: white;
+   overflow: hidden;
+}
+
+p {
+   margin: 2em;
+   color: white;
+   font-size: 12px;
+   font-weight: bold;
+   font-family: serif;
+   line-height: 1.5em;
+}
+h1 {
+   font-family: sans-serif;
+   font-size: 2em;
+}
+
+.walls {
+   position: absolute;
+   width: 14 * $ch;
+   height: 2 * $ch;
+   left: 50%;
+   top: 50%;
+   margin-left: -7 * $ch;
+   margin-top: -1 * $ch;
+   pointer-events: none;
+   @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+         z-index: #{$i * 100};
+      }
+   }
+}
+
+.plane {
+   perspective: 1 * $ch;
+   perspective-origin: 50% 50%;
+   transform-style: flat;
+   transform-origin: center;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+         z-index: #{$i * 100 + 50};
+         transform:  scale(1, 1);
+      }
+   }
+   //new method:
+   .arcade {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      .cell {
+         transform-style: preserve-3d;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         transform: translateZ(1 * $Zunit + .5 * $ch) translateX(1 * $ch);
+         margin-left: -.5 * $ch;
+         margin-top: -.5 * $ch;
+         .wall {
+            width: $ch;
+            height: $ch;
+            overflow: auto;
+            position: absolute;
+            background-color: rgba(black,.5);
+            box-sizing: border-box;
+            .content {
+            }
+         }
+         .mainwall {
+            transform: translateZ(-.5 * $ch);
+         }
+         .leftwall {
+            transform: translateX(-.5 * $ch) rotateY(90deg);
+        }
+         .rightwall {
+            transform: translateX(.5 * $ch) rotateY(-90deg);
+         }
+
+      }
+   }
+
+   .arcade0 {
+      transform: /*translateZ(1 * $Zunit + .5 * $ch)*/ scale(2, 2);
+      .cell {
+      transform: translateZ(1 * $Zunit + .5 * $ch);         
+      }
+   }
+   .arcade1 {
+      transform: /*translateZ(1 * $Zunit + .5 * $ch)*/ scale(1, 1);
+   }
+   .arcade2 {
+      transform: /*translateZ(1 * $Zunit + .5 * $ch)*/ scale(.5, .5);
+   }
+   .arcade3 {
+      transform: /*translateZ(1 * $Zunit + .5 * $ch)*/ scale(.25, .25);
+   }
+   .arcade4 {
+      transform: /*translateZ(1 * $Zunit + .5 * $ch)*/ scale(.125, .125);
+   }
+
+   //end new method
+
+   .wall {
+      img {
+         max-width: 100%;
+      }
+   }
+}
