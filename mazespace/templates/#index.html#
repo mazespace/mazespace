@@ -3,13 +3,26 @@
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <meta charset='utf-8'>
-    <link href='{{ url_for("static", filename="css/reset.css") }}' rel='stylesheet'>
-    <link href='{{ url_for("static", filename="css/perspectiveframe.css") }}' rel='stylesheet'>
+    <link href='css/reset.css' rel='stylesheet'>
+    <link href='css/perspectiveframe.css' rel='stylesheet'>
   </head>
   <body>
-    <img class='walls' src='{{ url_for("static", filename="images/arcade4.svg") }}'>
+    <img class='walls' src='arcade4.svg    This file is part of Foobar.
+
+    Foobar is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Foobar is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.'>
     <div class='plane'></div>
-    <img class='walls' src='{{ url_for("static", filename="images/arcade3.svg") }}'>
+    <img class='walls' src='arcade3.svg'>
     <div class='plane'>
       <div class='arcade arcade3'>
         <div class='cell'>
@@ -71,11 +84,11 @@
         </div>
       </div>
     </div>
-    <img class='walls' src='{{ url_for("static", filename="images/arcade2.svg") }}'>
+    <img class='walls' src='arcade2.svg'>
     <div class='plane'></div>
-    <img class='walls' src='{{ url_for("static", filename="images/arcade1.svg") }}'>
+    <img class='walls' src='arcade1.svg'>
     <div class='plane'></div>
-    <img class='walls' src='{{ url_for("static", filename="images/arcade0.svg") }}'>
+    <img class='walls' src='arcade0.svg'>
     <div class='plane'>
       <div class='arcade arcade0'>
         <div class='cell'>
