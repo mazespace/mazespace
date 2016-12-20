@@ -1,0 +1,57 @@
+
+<svg id="arcade3" data-name="walls" xmlns="http://www.w3.org/2000/svg" width="8401" height="1201" >
+  <defs>
+    <style>
+      .default {
+        fill: rgba(000,20,20,.33);
+        stroke: #0fd;
+        stroke-width: 1px;
+        stroke-linejoin: round;
+      }
+      .rearwalls .default {
+      }
+    </style>
+  </defs>
+  <title>arcade3</title>
+
+  <g id="Rooms-4">
+    <g id="RearWalls-4" class="rearwalls">
+      <rect class="default" x="3938" y="563" width="75" height="75"/>
+      <rect class="default" x="4013" y="563" width="75" height="75"/>
+      <rect class="default" x="4088" y="563" width="75" height="75"/>
+      <rect class="default" x="4163" y="563" width="75" height="75"/>
+      <rect class="default" x="4238" y="563" width="75" height="75"/>
+      <rect class="default" x="4313" y="563" width="75" height="75"/>
+      <rect class="default" x="4388" y="563" width="75" height="75"/>
+    </g>
+    <g id="Cielings-4" class="cielings">
+      <polygon class="default" points="3675.5 525.5 3938 563 4013 563 3825.5 525.5 3675.5 525.5"/>
+      <polygon class="default" points="4725.5 525.5 4463 563 4388 563 4575.5 525.5 4725.5 525.5"/>
+      <polygon class="default" points="4313 563 4425.5 525.5 4575.5 525.5 4388 563 4313 563"/>
+      <polygon class="default" points="3825.5 525.5 4013 563 4088 563 3975.5 525.5 3825.5 525.5"/>
+      <polygon class="default" points="4238 563 4313 563 4425.5 525.5 4275.5 525.5 4238 563"/>
+      <polygon class="default" points="4163 563 4088 563 3975.5 525.5 4125.5 525.5 4163 563"/>
+      <polygon class="default" points="4275.5 525.5 4238 563 4163 563 4125.5 525.5 4275.5 525.5"/>
+    </g>
+    <g id="Floors-4" class="floors">
+      <polygon class="default" points="4575.5 675.5 4725.5 675.5 4463 638 4388 638 4575.5 675.5"/>
+      <polygon class="default" points="3825.5 675.5 3675.5 675.5 3938 638 4013 638 3825.5 675.5"/>
+      <polygon class="default" points="4313 638 4425.5 675.5 4575.5 675.5 4388 638 4313 638"/>
+      <polygon class="default" points="4013 638 3825.5 675.5 3975.5 675.5 4088 638 4013 638"/>
+      <polygon class="default" points="4238 638 4275.5 675.5 4425.5 675.5 4313 638 4238 638"/>
+      <polygon class="default" points="4125.5 675.5 3975.5 675.5 4088 638 4163 638 4125.5 675.5"/>
+      <polygon class="default" points="4238 638 4275.5 675.5 4125.5 675.5 4163 638 4238 638"/>
+    </g>
+    <g id="SideWalls-4" class="sidewalls">
+      <polygon id="W-8-2" data-name="W-8" class="default" points="4463 638 4725.5 675.5 4725.5 525.5 4463 563 4463 638"/>
+      <polygon id="W-1-2" data-name="W-1" class="default" points="3938 638 3675.5 675.5 3675.5 525.5 3938 563 3938 638"/>
+      <polygon id="W-7-2" data-name="W-7" class="default" points="4388 563 4575.5 525.5 4575.5 675.5 4388 638 4388 563"/>
+      <polygon id="W-2-2" data-name="W-2" class="default" points="3825.5 675.5 4013 638 4013 563 3825.5 525.5 3825.5 675.5"/>
+      <polygon id="W-6-2" data-name="W-6" class="default" points="4425.5 675.5 4425.5 525.5 4313 563 4313 638 4425.5 675.5"/>
+      <polygon id="W-3-2" data-name="W-3" class="default" points="3975.5 675.5 3975.5 525.5 4088 563 4088 638 3975.5 675.5"/>
+      <polygon id="W-5-2" data-name="W-5" class="default" points="4238 563 4275.5 525.5 4275.5 675.5 4238 638 4238 563"/>
+      <polygon id="W-4-2" data-name="W-4" class="default" points="4163 563 4163 638 4125.5 675.5 4125.5 525.5 4163 563"/>
+    </g>
+  </g>
+</svg>
+
