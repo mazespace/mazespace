@@ -3,13 +3,13 @@
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
     <meta charset='utf-8'>
-    <link href='css/reset.css' rel='stylesheet'>
-    <link href='css/perspectiveframe.css' rel='stylesheet'>
+    <link href='{{ url_for("static", filename="css/reset.css") }}' rel='stylesheet'>
+    <link href='{{ url_for("static", filename="css/perspectiveframe.css") }}' rel='stylesheet'>
   </head>
   <body>
-    <img class='walls' src='arcade4.svg'>
+    <img class='walls' src='{{ url_for("static", filename="images/arcade4.svg") }}'>
     <div class='plane'></div>
-    <img class='walls' src='arcade3.svg'>
+    <img class='walls' src='{{ url_for("static", filename="images/arcade3.svg") }}'>
     <div class='plane'>
       <div class='arcade arcade3'>
         <div class='cell'>
@@ -71,11 +71,11 @@
         </div>
       </div>
     </div>
-    <img class='walls' src='arcade2.svg'>
+    <img class='walls' src='{{ url_for("static", filename="images/arcade2.svg") }}'>
     <div class='plane'></div>
-    <img class='walls' src='arcade1.svg'>
+    <img class='walls' src='{{ url_for("static", filename="images/arcade1.svg") }}'>
     <div class='plane'></div>
-    <img class='walls' src='arcade0.svg'>
+    <img class='walls' src='{{ url_for("static", filename="images/arcade0.svg") }}'>
     <div class='plane'>
       <div class='arcade arcade0'>
         <div class='cell'>
