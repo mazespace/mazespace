@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
-    <meta charset='utf-8'>
-    <link href='{{ url_for("static", filename="css/reset.css") }}' rel='stylesheet'>
-    <link href='{{ url_for("static", filename="css/perspectiveframe.css") }}' rel='stylesheet'>
-  </head>
-  <body>
+{% extends "base.html" %}
+  {% block content %}
     <img class='walls' src='{{ url_for("static", filename="images/arcade4.svg") }}'>
     <div class='plane'></div>
     <img class='walls' src='{{ url_for("static", filename="images/arcade3.svg") }}'>
@@ -143,5 +136,4 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
+  {% endblock %}
