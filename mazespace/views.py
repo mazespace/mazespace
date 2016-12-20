@@ -18,7 +18,12 @@
 from flask import *
 from mazespace import mazespace
 
+
+
+
+
+
 @mazespace.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('index.html', main_wall_title='MAIN WALL', right_wall_title='RIGHT WALL', left_wall_title='LEFT WALL')
 
